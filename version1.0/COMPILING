@@ -1,0 +1,64 @@
+Compiling Instructions
+*************************
+
+HardBrown is not meant as a library/utility to be installed, but as 
+an educational and research tool. It is therefore meant to compile 
+and work in a local directory. Everything is written in C++
+
+The skeletons of Brownian simulation of 2d disks and 3d spheres should 
+compile under the requirement that Standard Template Libraries are 
+present on your machine.
+
+
+A standard Makefile allows the compilation of the simulation 
+examples BROWNIAN2d.x and BROWNIAN3d.x:
+
+	make allSIMUL
+
+For Ubuntu systems where PlPlot libraries are installed, it is possible 
+to compile real-time 2d animated simulations of Brownian and Granular
+dynamics:
+
+	make allPLPLOT
+ 
+For Ubuntu systems where Inventor libraries are installed, it is 
+possible to compile real-time 3d animated simulations of Newtonian, 
+Brownian, Granular dynamics and random growth of bouncing spheres:
+
+	make alINVENTOR
+	
+If both PlPlot and Inventor are present, it is possible to compile all
+real-time animated simulations:
+
+	make allGRAPHIC
+ 
+
+compiling under UBUNTU:
+=======================
+Check that the following libraries are installed: 
+	* libstlportX.X-dev
+(Program have been developed with X.X=5.1, but should not matter)
+
+For 2d graphic, check for:
+	* libplplot-dev
+	* libplplot-c++
+	* plplot9-driver-xwin
+
+For 3d graphic, check for:
+	* libinventor
+	* inventor-dev
+It should be possible to use FreeGlut as an alternative to Inventor
+On some Ubuntu systems, it could be also necessary to install
+	* freeglut3-dev 
+
+compiling under DEBIAN: 
+=======================
+Should be similar to Ubuntu
+
+
+other distribution:
+===================
+For the real-time animations, it is necessary to modify the 
+PLPLOT and INVENTOR flags in the Makefile according to the 
+hosting system in order to link PlPlot and Inventor libraries.
+

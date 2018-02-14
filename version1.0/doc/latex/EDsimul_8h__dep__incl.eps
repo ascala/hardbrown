@@ -1,0 +1,493 @@
+%!PS-Adobe-2.0
+%%Creator: Graphviz version 2.16 (Fri Feb  8 12:54:58 UTC 2008)
+%%For: (scala) Antonio Scala,,,,
+%%Title: G
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 2278 120
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 2242 84 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+% Node1
+gsave
+0.000 0.000 0.749 nodecolor
+newpath 973 56 moveto
+973 75 lineto
+1227 75 lineto
+1227 56 lineto
+closepath fill
+1 setlinewidth
+filled
+0.000 0.000 0.000 nodecolor
+newpath 973 56 moveto
+973 75 lineto
+1227 75 lineto
+1227 56 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10.00 /FreeSans set_font
+981.125 61.25 moveto 237.75 (/home/scala/hardbrown/trunk/version1.0/src/EDsimul.h) alignedtext
+grestore
+% Node2
+gsave
+[ /Rect [ 0 1 290 19 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($BROWNIAN2d_8cpp.html) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+newpath 0 0 moveto
+0 19 lineto
+291 19 lineto
+291 0 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10.00 /FreeSans set_font
+7.375 5.25 moveto 275.25 (/home/scala/hardbrown/trunk/version1.0/src/BROWNIAN2d.cpp) alignedtext
+grestore
+% Node1->Node2
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 963 58 moveto
+803 49 532 34 299 20 curveto
+294 20 290 19 285 19 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 962.701 61.4875 moveto
+973 59 lineto
+963.398 54.5222 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 962.701 61.4875 moveto
+973 59 lineto
+963.398 54.5222 lineto
+closepath stroke
+grestore
+% Node3
+gsave
+[ /Rect [ 308 1 598 19 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($BROWNIAN3d_8cpp.html) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+newpath 308 0 moveto
+308 19 lineto
+599 19 lineto
+599 0 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10.00 /FreeSans set_font
+315.375 5.25 moveto 275.25 (/home/scala/hardbrown/trunk/version1.0/src/BROWNIAN3d.cpp) alignedtext
+grestore
+% Node1->Node3
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 974 55 moveto
+853 45 670 29 557 19 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 973.701 58.4875 moveto
+984 56 lineto
+974.398 51.5222 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 973.701 58.4875 moveto
+984 56 lineto
+974.398 51.5222 lineto
+closepath stroke
+grestore
+% Node4
+gsave
+[ /Rect [ 616 1 930 19 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($BROWNIANinventor_8cpp.html) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+newpath 616 0 moveto
+616 19 lineto
+931 19 lineto
+931 0 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10.00 /FreeSans set_font
+623.75 5.25 moveto 298.5 (/home/scala/hardbrown/trunk/version1.0/src/BROWNIANinventor.cpp) alignedtext
+grestore
+% Node1->Node4
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 1032 54 moveto
+970 44 881 28 825 19 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 1031.51 57.4708 moveto
+1042 56 lineto
+1032.88 50.6067 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 1031.51 57.4708 moveto
+1042 56 lineto
+1032.88 50.6067 lineto
+closepath stroke
+grestore
+% Node5
+gsave
+[ /Rect [ 948 1 1252 19 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($BROWNIANplplot_8cpp.html) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+newpath 948 0 moveto
+948 19 lineto
+1252 19 lineto
+1252 0 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10.00 /FreeSans set_font
+956 5.25 moveto 288 (/home/scala/hardbrown/trunk/version1.0/src/BROWNIANplplot.cpp) alignedtext
+grestore
+% Node1->Node5
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 1100 46 moveto
+1100 37 1100 26 1100 19 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 1096.5 46 moveto
+1100 56 lineto
+1103.5 46 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 1096.5 46 moveto
+1100 56 lineto
+1103.5 46 lineto
+closepath stroke
+grestore
+% Node6
+gsave
+[ /Rect [ 1270 1 1574 19 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($GRANULARplplot_8cpp.html) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+newpath 1270 0 moveto
+1270 19 lineto
+1574 19 lineto
+1574 0 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10.00 /FreeSans set_font
+1278 5.25 moveto 288 (/home/scala/hardbrown/trunk/version1.0/src/GRANULARplplot.cpp) alignedtext
+grestore
+% Node1->Node6
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 1168 54 moveto
+1228 44 1315 28 1370 19 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 1167.12 50.6067 moveto
+1158 56 lineto
+1168.49 57.4708 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 1167.12 50.6067 moveto
+1158 56 lineto
+1168.49 57.4708 lineto
+closepath stroke
+grestore
+% Node7
+gsave
+[ /Rect [ 1592 1 1896 19 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($GROWTHinventor_8cpp.html) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+newpath 1592 0 moveto
+1592 19 lineto
+1897 19 lineto
+1897 0 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10.00 /FreeSans set_font
+1599.62 5.25 moveto 288.75 (/home/scala/hardbrown/trunk/version1.0/src/GROWTHinventor.cpp) alignedtext
+grestore
+% Node1->Node7
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 1225 55 moveto
+1346 45 1527 29 1641 19 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 1224.6 51.5222 moveto
+1215 56 lineto
+1225.3 58.4875 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 1224.6 51.5222 moveto
+1215 56 lineto
+1225.3 58.4875 lineto
+closepath stroke
+grestore
+% Node8
+gsave
+[ /Rect [ 1914 1 2234 19 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($NEWTONIANinventor_8cpp.html) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+newpath 1914 0 moveto
+1914 19 lineto
+2234 19 lineto
+2234 0 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10.00 /FreeSans set_font
+1922.12 5.25 moveto 303.75 (/home/scala/hardbrown/trunk/version1.0/src/NEWTONIANinventor.cpp) alignedtext
+grestore
+% Node1->Node8
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 1237 58 moveto
+1398 48 1670 33 1905 20 curveto
+1910 20 1915 19 1920 19 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 1236.6 54.5222 moveto
+1227 59 lineto
+1237.3 61.4875 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 1236.6 54.5222 moveto
+1227 59 lineto
+1237.3 61.4875 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 2278 120
+end
+restore
+%%EOF

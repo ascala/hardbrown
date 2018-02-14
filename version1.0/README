@@ -1,0 +1,63 @@
+This project gives c++ skeletons for the event-driven simulation of the 
+Newtonian,  Brownian and Granular dynamics of hard bodies in 2 and 3 
+dimensions. 
+
+At the moment, simulations are limited to disks (2d) and spheres (3d)
+
+		OPTIONAL LIBS (GRAPHICS):
+
+plplot (plplot9-driver-xwin, libplplot-dev and libplplot-c++ on 
+Ubuntu/Debian)  is required for 2d animation
+
+openinventor and freeglut (inventor-dev, inventor-clients and possibly 
+freeglut3-dev on Ubuntu/Debian) are required for 3d animations
+
+
+DIRECTORIES:
+
+* src
+
+			=== headers ===
+	gaussdev.h: Random numbers generators
+	vectorNdim.h: Basic template library for vectors in 2d and 3d. 
+		      Integer vectors have periodic operators (%, %=)) 
+		      useful for the construction of periodic cells. 
+	Disk.h: 2d disks
+	Sphere.h: 3d spheres 
+	SimBox.h: Template simulation boxes for 2d and 3d
+	Event.h: Events for Event Driven simulations
+	EDsimul.h: Core of the project. Template class containing the 
+                   event queue, collision prediction, and propagation 
+                   steps for Brownian, Newtonian and Granular simulations  
+	wrap_plplot.h: wrapper for the 2d graphic libraries 
+	InventorShow.h: wrapper for the 3d graphic libraries
+	Gofr.h: calculation of radial distribution function in 2d and 3d
+
+			=== sources ===
+	gaussdev.cpp: Random numbers generators
+	Disk.cpp: 2d disks
+	Sphere.cpp: 3d spheres 
+	wrap_plplot.cpp: wrapper for the 2d graphic libraries 
+
+			=== examples ===
+* general	
+	BROWNIAN2d.cpp: skeleton of a 2d event driven simulation of
+                        hard Brownian disks
+	BROWNIAN3d.cpp: skeleton of a 3d event driven simulation of 
+                        hard Brownian spheres
+* 2d/PlPlot										
+	show2dconf.cpp: shows 2d configuration using PlPlot
+	GRANULARplplot.cpp: Animated event-driven simulation of 
+                            2d shaken granular disks
+	BROWNIANplplot.cpp: Animated event-driven simulation of 
+                            hard Brownian disks
+* 3d/OpenInventor						
+	show3dconf.cpp: shows 3d configuration using Open Inventor
+	BROWNIANinventor.cpp: Animated event-driven simulation of 
+                              hard Brownian spheres 
+	NEWTONIANinventor.cpp: Animated event-driven simulation of 
+                               hard spheres following Newtonian dynamics 
+	GROWTHinventor.cpp: Animation of the growth of a low density
+                            configuration of spheres up to a final
+                            packing fraction 
+

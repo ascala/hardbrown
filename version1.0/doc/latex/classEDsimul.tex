@@ -1,0 +1,104 @@
+\hypertarget{classEDsimul}{
+\section{EDsimul$<$ Particle, dim $>$ Class Template Reference}
+\label{classEDsimul}\index{EDsimul@{EDsimul}}
+}
+Template class to manage event-driven simulations of hyperspheres in \char`\"{}dim\char`\"{} dimensions.  
+
+
+{\tt \#include $<$EDsimul.h$>$}
+
+Collaboration diagram for EDsimul$<$ Particle, dim $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=89pt]{classEDsimul__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classEDsimul_c024fcd847c84abdbeda15bd19d1b0f8}{
+double \hyperlink{classEDsimul_c024fcd847c84abdbeda15bd19d1b0f8}{eps}}
+\label{classEDsimul_c024fcd847c84abdbeda15bd19d1b0f8}
+
+\begin{CompactList}\small\item\em restitution coefficient \item\end{CompactList}\item 
+\hypertarget{classEDsimul_c6693871a10649e25adc4d43d7523a6f}{
+double \hyperlink{classEDsimul_c6693871a10649e25adc4d43d7523a6f}{growthrate}}
+\label{classEDsimul_c6693871a10649e25adc4d43d7523a6f}
+
+\begin{CompactList}\small\item\em growth rate \item\end{CompactList}\item 
+\hypertarget{classEDsimul_653c1490dcaf4885d5c78ce84d570a57}{
+double \hyperlink{classEDsimul_653c1490dcaf4885d5c78ce84d570a57}{tol}}
+\label{classEDsimul_653c1490dcaf4885d5c78ce84d570a57}
+
+\begin{CompactList}\small\item\em tolerance in overlaps \item\end{CompactList}\item 
+\hypertarget{classEDsimul_84002fcf165166baebe0bffbf5f84500}{
+double \hyperlink{classEDsimul_84002fcf165166baebe0bffbf5f84500}{timeinfinite}}
+\label{classEDsimul_84002fcf165166baebe0bffbf5f84500}
+
+\begin{CompactList}\small\item\em biggest time reacheable \item\end{CompactList}\item 
+\hypertarget{classEDsimul_ea9c4239caf7edea34ac971de39b1ed6}{
+double \hyperlink{classEDsimul_ea9c4239caf7edea34ac971de39b1ed6}{timenow}}
+\label{classEDsimul_ea9c4239caf7edea34ac971de39b1ed6}
+
+\begin{CompactList}\small\item\em current time \item\end{CompactList}\item 
+\hypertarget{classEDsimul_afdd25e2f855e6526fa2f472db244ba4}{
+double \hyperlink{classEDsimul_afdd25e2f855e6526fa2f472db244ba4}{endtime}}
+\label{classEDsimul_afdd25e2f855e6526fa2f472db244ba4}
+
+\begin{CompactList}\small\item\em time at which simulation ends \item\end{CompactList}\item 
+\hypertarget{classEDsimul_ea42c7e9c85334b7a0790d17fac4ec39}{
+double \hyperlink{classEDsimul_ea42c7e9c85334b7a0790d17fac4ec39}{tausync}}
+\label{classEDsimul_ea42c7e9c85334b7a0790d17fac4ec39}
+
+\begin{CompactList}\small\item\em period for syncing particles \item\end{CompactList}\item 
+\hypertarget{classEDsimul_69a5e6d44e7537186c29a4a65c9cc79b}{
+double \hyperlink{classEDsimul_69a5e6d44e7537186c29a4a65c9cc79b}{nexttimesync}}
+\label{classEDsimul_69a5e6d44e7537186c29a4a65c9cc79b}
+
+\begin{CompactList}\small\item\em next sync time \item\end{CompactList}\item 
+\hypertarget{classEDsimul_87340d314c63552b02a15ac8a51eb967}{
+double \hyperlink{classEDsimul_87340d314c63552b02a15ac8a51eb967}{tautherm}}
+\label{classEDsimul_87340d314c63552b02a15ac8a51eb967}
+
+\begin{CompactList}\small\item\em period for thermalizing particles \item\end{CompactList}\item 
+\hypertarget{classEDsimul_769eba723695dc0336aa43fa14c2ac84}{
+double \hyperlink{classEDsimul_769eba723695dc0336aa43fa14c2ac84}{nexttimetherm}}
+\label{classEDsimul_769eba723695dc0336aa43fa14c2ac84}
+
+\begin{CompactList}\small\item\em next thermalization time \item\end{CompactList}\item 
+\hypertarget{classEDsimul_3f59a922bf59e9fcd34880d49afa0512}{
+std::priority\_\-queue$<$ \hyperlink{classEvent}{Event} $>$ \hyperlink{classEDsimul_3f59a922bf59e9fcd34880d49afa0512}{EventQueue}}
+\label{classEDsimul_3f59a922bf59e9fcd34880d49afa0512}
+
+\begin{CompactList}\small\item\em time ordered event queue \item\end{CompactList}\item 
+\hypertarget{classEDsimul_765820a4405532d2bae2498013f4e8b8}{
+\hyperlink{classSimBox}{SimBox}$<$ Particle, dim $>$ $\ast$ \hyperlink{classEDsimul_765820a4405532d2bae2498013f4e8b8}{box}}
+\label{classEDsimul_765820a4405532d2bae2498013f4e8b8}
+
+\begin{CompactList}\small\item\em Simulation box. \item\end{CompactList}\item 
+\hypertarget{classEDsimul_7ba91163e0ab84a11163c680dfdfa674}{
+int \hyperlink{classEDsimul_7ba91163e0ab84a11163c680dfdfa674}{Npart}}
+\label{classEDsimul_7ba91163e0ab84a11163c680dfdfa674}
+
+\begin{CompactList}\small\item\em Number of particles. \item\end{CompactList}\item 
+\hypertarget{classEDsimul_edfc01e12a93afe4ee043cd4b4cf7dd3}{
+Particle $\ast$ \hyperlink{classEDsimul_edfc01e12a93afe4ee043cd4b4cf7dd3}{c}}
+\label{classEDsimul_edfc01e12a93afe4ee043cd4b4cf7dd3}
+
+\begin{CompactList}\small\item\em Particles. \item\end{CompactList}\item 
+\hypertarget{classEDsimul_11f9161d77d6fcd20c1948ad901746dc}{
+\hyperlink{classvectorNdim}{vectorNdim}$<$ double, dim $>$ \hyperlink{classEDsimul_11f9161d77d6fcd20c1948ad901746dc}{L}}
+\label{classEDsimul_11f9161d77d6fcd20c1948ad901746dc}
+
+\begin{CompactList}\small\item\em Sides of the box. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Particle, int dim$>$ class EDsimul$<$ Particle, dim $>$}
+
+Template class to manage event-driven simulations of hyperspheres in \char`\"{}dim\char`\"{} dimensions. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/scala/hardbrown/trunk/version1.0/src/\hyperlink{EDsimul_8h}{EDsimul.h}\end{CompactItemize}

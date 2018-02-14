@@ -1,0 +1,56 @@
+\hypertarget{classEvent}{
+\section{Event Class Reference}
+\label{classEvent}\index{Event@{Event}}
+}
+Class for the scheduled events.  
+
+
+{\tt \#include $<$Event.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classEvent_7cf2572f1124c9700c89ff9f01b311bf}{
+double \hyperlink{classEvent_7cf2572f1124c9700c89ff9f01b311bf}{time}}
+\label{classEvent_7cf2572f1124c9700c89ff9f01b311bf}
+
+\begin{CompactList}\small\item\em time for which the event is scheduled \item\end{CompactList}\item 
+\hypertarget{classEvent_31eef2d34054124685a02c5b62828ffa}{
+int \hyperlink{classEvent_31eef2d34054124685a02c5b62828ffa}{i}}
+\label{classEvent_31eef2d34054124685a02c5b62828ffa}
+
+\begin{CompactList}\small\item\em index of first particle involved in an event \item\end{CompactList}\item 
+\hypertarget{classEvent_37d2f4c9ed053cb304290aa558b1c6a6}{
+int \hyperlink{classEvent_37d2f4c9ed053cb304290aa558b1c6a6}{j}}
+\label{classEvent_37d2f4c9ed053cb304290aa558b1c6a6}
+
+\begin{CompactList}\small\item\em index of second particle involved in an event \item\end{CompactList}\item 
+\hypertarget{classEvent_e345959d88c0b9b118ae4450af0665b4}{
+long int \hyperlink{classEvent_e345959d88c0b9b118ae4450af0665b4}{nci}}
+\label{classEvent_e345959d88c0b9b118ae4450af0665b4}
+
+\begin{CompactList}\small\item\em \# of collisions of first particle \item\end{CompactList}\item 
+\hypertarget{classEvent_6b90e4b10bfc784979e43a2e5da28fc6}{
+long int \hyperlink{classEvent_6b90e4b10bfc784979e43a2e5da28fc6}{ncj}}
+\label{classEvent_6b90e4b10bfc784979e43a2e5da28fc6}
+
+\begin{CompactList}\small\item\em \# of collisions of second particle \item\end{CompactList}\item 
+\hypertarget{classEvent_628b64ab207ec0d57a24c5b9b73e8540}{
+\hyperlink{Event_8h_d6ef938e753c4f7df22352292640e8cf}{EventKind} \hyperlink{classEvent_628b64ab207ec0d57a24c5b9b73e8540}{kind}}
+\label{classEvent_628b64ab207ec0d57a24c5b9b73e8540}
+
+\begin{CompactList}\small\item\em \hyperlink{classEvent}{Event} kind. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the scheduled events. 
+
+Events are scheduled to occurr at time \char`\"{}time\char`\"{}; the can involve one particle, two particles or be general collective events
+
+If the event involves a single particle, \char`\"{}i\char`\"{} is the index of the particle and \char`\"{}nci\char`\"{} is the number of collision suffered by the i-th particle at the scheduling time
+
+If the event involves two particles, their indices are \char`\"{}i\char`\"{} and \char`\"{}j\char`\"{} and \char`\"{}nci\char`\"{}, \char`\"{}ncj\char`\"{} are the number of collision suffered by the involved particles at the scheduling time 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/scala/hardbrown/trunk/version1.0/src/\hyperlink{Event_8h}{Event.h}\end{CompactItemize}

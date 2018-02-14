@@ -1,0 +1,66 @@
+\hypertarget{vectorNdim_8h}{
+\section{/home/scala/hardbrown/trunk/version1.0/src/vectorNdim.h File Reference}
+\label{vectorNdim_8h}\index{/home/scala/hardbrown/trunk/version1.0/src/vectorNdim.h@{/home/scala/hardbrown/trunk/version1.0/src/vectorNdim.h}}
+}
+Basic template library for vectors in 2d and 3d. 
+
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$cctype$>$}\par
+{\tt \#include $<$climits$>$}\par
+{\tt \#include $<$cstdio$>$}\par
+{\tt \#include $<$cstring$>$}\par
+{\tt \#include $<$cstdlib$>$}\par
+{\tt \#include $<$cmath$>$}\par
+{\tt \#include \char`\"{}gaussdev.h\char`\"{}}\par
+
+
+Include dependency graph for vectorNdim.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{vectorNdim_8h__incl}
+\end{center}
+\end{figure}
+
+
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=420pt]{vectorNdim_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classvectorNdim}{vectorNdim$<$ T, dim $>$}
+\begin{CompactList}\small\item\em Template class for vectors. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\hypertarget{vectorNdim_8h_e9811022aeb4c5d22a278bb6e52e8628}{
+\#define \hyperlink{vectorNdim_8h_e9811022aeb4c5d22a278bb6e52e8628}{Vec2d}~\hyperlink{classvectorNdim}{vectorNdim}$<$double,2$>$}
+\label{vectorNdim_8h_e9811022aeb4c5d22a278bb6e52e8628}
+
+\begin{CompactList}\small\item\em 2d vectors \item\end{CompactList}\item 
+\hypertarget{vectorNdim_8h_0a258c06d6a0d1afa9316444e00627be}{
+\#define \hyperlink{vectorNdim_8h_0a258c06d6a0d1afa9316444e00627be}{Vec3d}~\hyperlink{classvectorNdim}{vectorNdim}$<$double,3$>$}
+\label{vectorNdim_8h_0a258c06d6a0d1afa9316444e00627be}
+
+\begin{CompactList}\small\item\em 3d vectors \item\end{CompactList}\item 
+\hypertarget{vectorNdim_8h_840240b994b97fd8ebe07cfaf748a8ca}{
+\#define \hyperlink{vectorNdim_8h_840240b994b97fd8ebe07cfaf748a8ca}{IVec2d}~\hyperlink{classvectorNdim}{vectorNdim}$<$int,2$>$}
+\label{vectorNdim_8h_840240b994b97fd8ebe07cfaf748a8ca}
+
+\begin{CompactList}\small\item\em integer 2d vectors \item\end{CompactList}\item 
+\hypertarget{vectorNdim_8h_fb896eb12fbb762d962fd06b03b8ed88}{
+\#define \hyperlink{vectorNdim_8h_fb896eb12fbb762d962fd06b03b8ed88}{IVec3d}~\hyperlink{classvectorNdim}{vectorNdim}$<$int,3$>$}
+\label{vectorNdim_8h_fb896eb12fbb762d962fd06b03b8ed88}
+
+\begin{CompactList}\small\item\em integer 3d vectors \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Basic template library for vectors in 2d and 3d. 
+
+Integer vectors have periodic operators (\%, =)) useful for the construction of periodic cells. 

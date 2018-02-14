@@ -1,0 +1,107 @@
+\hypertarget{classSimBox}{
+\section{SimBox$<$ Particle, dim $>$ Class Template Reference}
+\label{classSimBox}\index{SimBox@{SimBox}}
+}
+Template class for the simulation box.  
+
+
+{\tt \#include $<$SimBox.h$>$}
+
+Collaboration diagram for SimBox$<$ Particle, dim $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=89pt]{classSimBox__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classSimBox_c8d388ca320eee5ae08ac7333f8cff77}{
+bool \hyperlink{classSimBox_c8d388ca320eee5ae08ac7333f8cff77}{write\_\-conf} (const char $\ast$namefile)}
+\label{classSimBox_c8d388ca320eee5ae08ac7333f8cff77}
+
+\begin{CompactList}\small\item\em Writes a configuration from file. \item\end{CompactList}\item 
+\hypertarget{classSimBox_19bc9e4e412283c5c2408d9a0fcd49a2}{
+bool \hyperlink{classSimBox_19bc9e4e412283c5c2408d9a0fcd49a2}{read\_\-conf} (const char $\ast$namefile)}
+\label{classSimBox_19bc9e4e412283c5c2408d9a0fcd49a2}
+
+\begin{CompactList}\small\item\em Read a configuration from file. \item\end{CompactList}\item 
+\hypertarget{classSimBox_73b5b825eab01b2ac16769b14fcc53d1}{
+double \hyperlink{classSimBox_73b5b825eab01b2ac16769b14fcc53d1}{kinenergy} ()}
+\label{classSimBox_73b5b825eab01b2ac16769b14fcc53d1}
+
+\begin{CompactList}\small\item\em Calculates kinetic energy. \item\end{CompactList}\item 
+\hypertarget{classSimBox_769142b84fa75582cf8263e6e43562b2}{
+void \hyperlink{classSimBox_769142b84fa75582cf8263e6e43562b2}{ThermalizeVel} (double Temp=1.0)}
+\label{classSimBox_769142b84fa75582cf8263e6e43562b2}
+
+\begin{CompactList}\small\item\em Thermalizes the velocities. \item\end{CompactList}\item 
+\hypertarget{classSimBox_d5c1b5becc011f680d7327b4047364c9}{
+double \hyperlink{classSimBox_d5c1b5becc011f680d7327b4047364c9}{PackingFraction} ()}
+\label{classSimBox_d5c1b5becc011f680d7327b4047364c9}
+
+\begin{CompactList}\small\item\em Calculates the packing fraction. \item\end{CompactList}\item 
+\hypertarget{classSimBox_9ca49b599ce387b58490abccc58939f3}{
+void \hyperlink{classSimBox_9ca49b599ce387b58490abccc58939f3}{CreateRND} (int N, double phi, double radius=5, double tstart=0, double Temp=1.0)}
+\label{classSimBox_9ca49b599ce387b58490abccc58939f3}
+
+\begin{CompactList}\small\item\em Creates a random configuration of particles. \item\end{CompactList}\item 
+\hypertarget{classSimBox_e1dd4b3d01fe8f1a5db0e9f937e7cf7a}{
+void \hyperlink{classSimBox_e1dd4b3d01fe8f1a5db0e9f937e7cf7a}{CreateSQ} (int Nside, double phi, double radius=5, double tstart=0, double Temp=1.0)}
+\label{classSimBox_e1dd4b3d01fe8f1a5db0e9f937e7cf7a}
+
+\begin{CompactList}\small\item\em Creates a Square 2d lattice. \item\end{CompactList}\item 
+\hypertarget{classSimBox_a6c8ab24182510bb64dbd425db1986a2}{
+void \hyperlink{classSimBox_a6c8ab24182510bb64dbd425db1986a2}{CreateSC} (int Nside, double phi, double radius=5, double tstart=0, double Temp=1.0)}
+\label{classSimBox_a6c8ab24182510bb64dbd425db1986a2}
+
+\begin{CompactList}\small\item\em Creates a Simple Cubic 3d lattice. \item\end{CompactList}\item 
+\hypertarget{classSimBox_6684cf16ecc15f4614a6f6d5ef0ec108}{
+void \hyperlink{classSimBox_6684cf16ecc15f4614a6f6d5ef0ec108}{CreateFCC} (int Nside, double phi, double radius=5, double tstart=0, double Temp=1.0)}
+\label{classSimBox_6684cf16ecc15f4614a6f6d5ef0ec108}
+
+\begin{CompactList}\small\item\em Creates a Face Centered Cubic 3d lattice. \item\end{CompactList}\item 
+\hypertarget{classSimBox_44bbbe60cd1a928e5db4ca75a75794ee}{
+void \hyperlink{classSimBox_44bbbe60cd1a928e5db4ca75a75794ee}{CreateBCC} (int Nside, double phi, double radius=5, double tstart=0, double Temp=1.0)}
+\label{classSimBox_44bbbe60cd1a928e5db4ca75a75794ee}
+
+\begin{CompactList}\small\item\em Creates a Body Centered Cubic 3d lattice. \item\end{CompactList}\item 
+\hypertarget{classSimBox_aefdb92709a7ffeb969979c46e0dff0b}{
+bool \hyperlink{classSimBox_aefdb92709a7ffeb969979c46e0dff0b}{checkoverlap} ()}
+\label{classSimBox_aefdb92709a7ffeb969979c46e0dff0b}
+
+\begin{CompactList}\small\item\em checks if any particle overlaps \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classSimBox_4960d1a2d759d2d3f8931d9525b5a8fe}{
+int \hyperlink{classSimBox_4960d1a2d759d2d3f8931d9525b5a8fe}{Npart}}
+\label{classSimBox_4960d1a2d759d2d3f8931d9525b5a8fe}
+
+\begin{CompactList}\small\item\em Number of particles. \item\end{CompactList}\item 
+\hypertarget{classSimBox_79606ff5d5b043c9d4cc500a98acdac9}{
+double \hyperlink{classSimBox_79606ff5d5b043c9d4cc500a98acdac9}{tol}}
+\label{classSimBox_79606ff5d5b043c9d4cc500a98acdac9}
+
+\begin{CompactList}\small\item\em Numerical tolerance for the overlap. \item\end{CompactList}\item 
+\hypertarget{classSimBox_d3506a95831b4684b115f33136119ae9}{
+\hyperlink{classvectorNdim}{vectorNdim}$<$ double, dim $>$ \hyperlink{classSimBox_d3506a95831b4684b115f33136119ae9}{L}}
+\label{classSimBox_d3506a95831b4684b115f33136119ae9}
+
+\begin{CompactList}\small\item\em Sides of the box. \item\end{CompactList}\item 
+\hypertarget{classSimBox_aef9a13c9aad3922f3289273b6ad8546}{
+Particle $\ast$ \hyperlink{classSimBox_aef9a13c9aad3922f3289273b6ad8546}{particles}}
+\label{classSimBox_aef9a13c9aad3922f3289273b6ad8546}
+
+\begin{CompactList}\small\item\em Particles in the box. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Particle, int dim$>$ class SimBox$<$ Particle, dim $>$}
+
+Template class for the simulation box. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/scala/hardbrown/trunk/version1.0/src/\hyperlink{SimBox_8h}{SimBox.h}\end{CompactItemize}

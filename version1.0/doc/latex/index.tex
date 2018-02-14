@@ -1,0 +1,65 @@
+\hypertarget{index_intro_sec}{}\section{Introduction}\label{index_intro_sec}
+The simulation of hard particles has been longly regarded as a tool for checking idealized theories. Nowadays, Colloidal Science, Granular Matter and Nano Fluidics deal with objects that can be described as hard particles subject to Brownian motion.
+
+While there is a vast choice of simulation tools and libraries for atoms, molecules and in general \char`\"{}soft\char`\"{} particles, this is not the case for \char`\"{}hard\char`\"{} particles. In particular, the standard integration methods for Newtonian and Brownian dynamics are based on the continuity of the inter-particle potential and fail for the steep interactions among hard particles.
+
+Therefore, while simulation methods for systems of many particle have begone a standard in the curriculum of numerical scientists, it is still difficult for them to get an \char`\"{}hand-on\char`\"{} knowledge of hard particles simulations. HardBrown aims to fill such gaps.
+
+For hard particles, it is necessary to resort on Event-Driven simulation methods where the possible collisions among the particles are predicted and then processed through the use of a time-ordered Priority Queue. HardBrown contains programs that can be used as templates for:
+
+\begin{itemize}
+\item Event-Driven Newtonian Dynamics\item Event-Driven Granular Dynamics\item Event-Driven Brownian Dynamics\end{itemize}
+
+
+Both for educational and debugging purposes, it is important to access visually to the ongoing simulation. HardBrown has interfaces and template programs for 2d and 3d real-time animated simulations via PlPlot and Inventor libraries.
+
+HardBrown has been developed on an Ubuntu system, and should therefore be easy to install on Ubuntu and Debian based architecture.
+
+The language chosen is C++.
+
+Project can be downloaded at \href{http://download.gna.org/hardshap/}{\tt gna.org }\hypertarget{index_compile_sec}{}\section{Compilation}\label{index_compile_sec}
+HardBrown is not meant as a library/utility to be installed, but as an educational and research tool. It is therefore meant to compile and work in a local directory. Everything is written in C++
+
+The skeletons of Brownian simulation of 2d disks and 3d spheres should compile under the requirement that Standard Template Libraries are present on your machine.
+
+A standard Makefile allows the compilation of the simulation examples BROWNIAN2d.x and BROWNIAN3d.x:\begin{itemize}
+\item make allSIMUL\end{itemize}
+
+
+For Ubuntu systems where PlPlot libraries are installed, it is possible to compile real-time 2d animated simulations of Brownian and Granular dynamics:\begin{itemize}
+\item make allPLPLOT\end{itemize}
+
+
+For Ubuntu systems where Inventor libraries are installed, it is possible to compile real-time 3d animated simulations of Newtonian, Brownian, Granular dynamics and random growth of bouncing spheres:\begin{itemize}
+\item make alINVENTOR\end{itemize}
+
+
+If both PlPlot and Inventor are present, it is possible to compile all real-time animated simulations:\begin{itemize}
+\item make allGRAPHIC\end{itemize}
+\hypertarget{index_compile_ubuntu}{}\subsection{Ubuntu/Debian:}\label{index_compile_ubuntu}
+Check that the following libraries are installed:\begin{itemize}
+\item libstlportX.X-dev (Program have been developed with X.X=5.1, but should not matter)\end{itemize}
+
+
+For 2d graphic, check for:\begin{itemize}
+\item libplplot-dev\item libplplot-c++\item plplot9-driver-xwin For 3d graphic, check for:\item libinventor\item inventor-dev\end{itemize}
+
+
+It should be possible to use FreeGlut as an alternative to Inventor On some Ubuntu systems, it could be also necessary to install\begin{itemize}
+\item freeglut3-dev\end{itemize}
+\hypertarget{index_compile_other}{}\subsection{other distributions:}\label{index_compile_other}
+For the real-time animations, it is necessary to modify the PLPLOT and INVENTOR flags in the Makefile according to the hosting system in order to link PlPlot and Inventor libraries.\hypertarget{index_dirs}{}\section{Files:}\label{index_dirs}
+\begin{itemize}
+\item headers\begin{itemize}
+\item \hyperlink{gaussdev_8h}{gaussdev.h}: Random numbers generators\item \hyperlink{vectorNdim_8h}{vectorNdim.h}: Basic template library for vectors in 2d and 3d. Integer vectors have periodic operators (\%, =)) useful for the construction of periodic cells.\item \hyperlink{Disk_8h}{Disk.h}: 2d disks\item \hyperlink{Sphere_8h}{Sphere.h}: 3d spheres\item \hyperlink{SimBox_8h}{SimBox.h}: Template simulation boxes for 2d and 3d\item \hyperlink{Event_8h}{Event.h}: Events for \hyperlink{classEvent}{Event} Driven simulations\item \hyperlink{EDsimul_8h}{EDsimul.h}: Core of the project. Template class containing the event queue, collision prediction, and propagation steps for Brownian, Newtonian and Granular simulations\item \hyperlink{wrap__plplot_8h}{wrap\_\-plplot.h}: wrapper for the 2d graphic libraries\item \hyperlink{InventorShow_8h}{InventorShow.h}: wrapper for the 3d graphic libraries\item Gofr.h: calculation of radial distribution function in 2d and 3d\end{itemize}
+\item sources\begin{itemize}
+\item gaussdev.cpp: Random numbers generators\item Disk.cpp: 2d disks\item Sphere.cpp: 3d spheres\item wrap\_\-plplot.cpp: wrapper for the 2d graphic libraries\end{itemize}
+\item examples\begin{enumerate}
+\item general\begin{itemize}
+\item \hyperlink{BROWNIAN2d_8cpp}{BROWNIAN2d.cpp}: skeleton of a 2d event driven simulation of hard Brownian disks\item \hyperlink{BROWNIAN3d_8cpp}{BROWNIAN3d.cpp}: skeleton of a 3d event driven simulation of hard Brownian spheres\end{itemize}
+\item 2d/PlPlot\begin{itemize}
+\item \hyperlink{show2dconf_8cpp}{show2dconf.cpp}: shows 2d configuration using PlPlot\item \hyperlink{GRANULARplplot_8cpp}{GRANULARplplot.cpp}: Animated event-driven simulation of 2d shaken granular disks\item \hyperlink{BROWNIANplplot_8cpp}{BROWNIANplplot.cpp}: Animated event-driven simulation of hard Brownian disks\end{itemize}
+\item 3d/OpenInventor\begin{itemize}
+\item \hyperlink{show3dconf_8cpp}{show3dconf.cpp}: shows 3d configuration using Open Inventor\item \hyperlink{BROWNIANinventor_8cpp}{BROWNIANinventor.cpp}: Animated event-driven simulation of hard Brownian spheres\item \hyperlink{NEWTONIANinventor_8cpp}{NEWTONIANinventor.cpp}: Animated event-driven simulation of hard spheres following Newtonian dynamics\item \hyperlink{GROWTHinventor_8cpp}{GROWTHinventor.cpp}: Animation of the growth of a low density configuration of spheres up to a final packing fraction\end{itemize}
+\end{enumerate}
+\end{itemize}
